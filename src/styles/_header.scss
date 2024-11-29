@@ -1,0 +1,58 @@
+@use "globals" as *;
+
+header {
+    background-color: $colors-mode-colors-2-secondary-color-2;
+
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family-menu;
+        font-size: $size-menu;
+        height: 160px;
+
+        .menu-item2 {
+            a:nth-child(3) {
+                padding: 0;
+            }
+
+            a {
+                padding-right: 60px;
+                text-decoration: none;
+                text-shadow: -1px -1px 0 $primary-primary-01, 1px -1px 0 $primary-primary-01;
+                color: $secondary-secondary-02;
+            }
+        }
+
+        .menu-item3 {
+            button:nth-child(1) {
+                margin-right: 50px;
+            }
+
+            button {
+                background-color: $primary-primary-01;
+                border-radius: $border-buttons;
+                border: none;
+                padding: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $secondary-secondary-02;
+                    font-family: $font-family-menu;
+                    font-size: $size-menu;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+main{
+    
+    img{
+        position: relative;
+        left: 921px;
+    }
+}

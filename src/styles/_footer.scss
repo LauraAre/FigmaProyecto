@@ -1,0 +1,24 @@
+@use "globals" as *;
+
+footer {
+    background-color: $colors-mode-colors-2-secondary-color-2;
+    font-family: $font-family-parrafo;
+    font-size: $size-parrafo;
+    color: $secondary-secondary-02;
+    
+    .footer-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 160px;
+    }
+    .footer-item2{
+        img:nth-child(1){
+            padding: 0px 0px;
+        }
+        img{
+            padding-left: 60px;
+            
+        }
+    }
+}
