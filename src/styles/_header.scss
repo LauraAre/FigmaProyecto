@@ -19,8 +19,9 @@ header {
             a {
                 padding-right: 60px;
                 text-decoration: none;
-                text-shadow: -1px -1px 0 $primary-primary-01, 1px -1px 0 $primary-primary-01;
-                color: $secondary-secondary-02;
+                text-shadow: -1px -1px 0 $colors-mode-colors-1-primary-color-2, 
+                1px -1px 0 $colors-mode-colors-1-primary-color-2;
+                color: $colors-mode-colors-2-secondary-color-1;
             }
         }
 
@@ -30,29 +31,29 @@ header {
             }
 
             button {
-                background-color: $primary-primary-01;
+                background-color: $colors-mode-colors-1-primary-color-2;
                 border-radius: $border-buttons;
                 border: none;
                 padding: 10px;
 
+                &:hover{
+                    background-color: $colors-mode-colors-1-primary-color-1;
+                }
+
                 a {
                     text-decoration: none;
-                    color: $secondary-secondary-02;
+                    color: $colors-mode-colors-2-secondary-color-1;
                     font-family: $font-family-menu;
                     font-size: $size-menu;
+                    &:hover{
+                        color: $colors-mode-colors-2-secondary-color-2;
+                    }
                 }
+
+                
             }
 
         }
     }
 
-}
-
-
-main{
-    
-    img{
-        position: relative;
-        left: 921px;
-    }
 }
