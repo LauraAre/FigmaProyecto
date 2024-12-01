@@ -1,33 +1,30 @@
 @use "globals" as *;
 
 .container {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 body {
-    background-color: $colors-mode-colors-1-primary-color-1; 
+  background-color: $colors-mode-colors-1-primary-color-1;
+  overflow-x: hidden;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap; 
-    margin: -0.5rem; 
-  }
-  
-  .col {
-    flex: 1; 
-    padding: 0.5rem;
-  }
-  
-  .col-6 {
-    flex: 0 0 50%; // 50% del ancho
-  }
-  
-  .col-12 {
-    flex: 0 0 100%; // 100% del ancho
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
 
+.col {
+  flex: 1;
+  padding: 0.5rem;
+}
 
-  
+.col-6 {
+  flex: 0 0 50%; // 50% del ancho
+}
 
+.col-12 {
+  flex: 0 0 100%; // 100% del ancho
+}
