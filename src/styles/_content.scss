@@ -75,6 +75,11 @@ main {
                 grid-column: 2/5;
             }
 
+            @include respond-to("medium-l") {
+                width: 355px;
+                grid-column: 2/4;
+            }
+
             @include respond-to("small") {
                 width: 422px;
                 grid-row: 1;
@@ -89,6 +94,11 @@ main {
 
             @include respond-to("medium") {
                 grid-column: 6/10;
+            }
+
+            @include respond-to("medium-l") {
+                grid-column: 5/9;
+                margin-top: 55px;
             }
 
             @include respond-to("small") {
@@ -106,6 +116,11 @@ main {
             @include respond-to("medium") {
                 grid-column: 2/6;
             }
+
+            @include respond-to("medium-l") {
+                margin-top: 380px;
+            }
+
             @include respond-to("small") {
                 grid-row: 3;
                 grid-column: 2/6;
@@ -122,6 +137,9 @@ main {
 
             @include respond-to("medium") {
                 grid-column: 2/6;
+            }
+            @include respond-to("medium-l") {
+                grid-column: 2/4;
             }
             @include respond-to("small") {
                 grid-row: 5;
@@ -142,6 +160,12 @@ main {
                 width: 355px;
                 grid-column: 7/10;
             }
+
+            @include respond-to("medium-l") {
+                width: 355px;
+                grid-column: 5/9;
+            }
+            
             @include respond-to("small") {
                 width: 422px;
                 grid-row: 4;
