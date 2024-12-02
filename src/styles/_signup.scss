@@ -1,7 +1,7 @@
 @use "globals" as *;
 
 .subtitle {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .grid-formulario {
@@ -19,6 +19,12 @@
 
         @include respond-to("small") {
             width: 400px;
+            height: 1200px;
+        }
+
+        @include respond-to("small-medium") {
+            width: 300px;
+            height: 1250px;
         }
 
         .titulo-form {
@@ -36,6 +42,9 @@
 
             @include respond-to("small") {
                 margin-left: 150px;
+            }
+            @include respond-to("small-medium") {
+                margin-left: 100px;
             }
         }
 
@@ -177,19 +186,4 @@
 .arrow {
     text-align: center;
     margin-bottom: 150px;
-}
-
-
-figure {
-
-    .figura {
-
-        @include respond-to("small") {
-            width: 600px;
-            height: 750px;
-            left: 30%;
-            top: 885px;
-        }
-
-    }
 }
