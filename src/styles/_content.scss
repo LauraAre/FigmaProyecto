@@ -138,9 +138,11 @@ main {
             @include respond-to("medium") {
                 grid-column: 2/6;
             }
+
             @include respond-to("medium-l") {
                 grid-column: 2/4;
             }
+
             @include respond-to("small") {
                 grid-row: 5;
                 grid-column: 2/6;
@@ -165,7 +167,7 @@ main {
                 width: 355px;
                 grid-column: 5/9;
             }
-            
+
             @include respond-to("small") {
                 width: 422px;
                 grid-row: 4;

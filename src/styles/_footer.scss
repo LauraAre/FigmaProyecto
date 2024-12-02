@@ -5,19 +5,22 @@ footer {
     font-family: $font-family-parrafo;
     font-size: $size-parrafo;
     color: $secondary-secondary-02;
-    
-    .footer-items{
+
+    .footer-items {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 160px;
     }
-    .footer-item2{
-        img:nth-child(1){
+
+    .footer-item2 {
+        img:nth-child(1) {
             padding: 0px 0px;
         }
-        img{
+
+        img {
             padding-left: 60px;
+
             @include respond-to("small") {
                 padding-left: 30px;
             }
