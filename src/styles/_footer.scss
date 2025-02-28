@@ -18,12 +18,13 @@ footer {
             padding: 0px 0px;
         }
 
-        img {
+        a {
             padding-left: 60px;
 
             @include respond-to("small") {
                 padding-left: 30px;
             }
         }
+
     }
 }

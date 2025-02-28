@@ -32,7 +32,7 @@
           </ul>
         </div>
 
-        
+
 
         <div class="hamburger" id="hamburger">
           <img src="assets/icons/uil_align-justify.png" alt="Menu" width="30">
@@ -83,9 +83,10 @@
 
       </div>
       <div class="arrow">
-        <a href="index.html"><img src="assets/icons/left-arrow.png" alt=""></a>
+        <a href="javascript:void(0);" onclick="ArrowAtras()">
+          <img src="assets/icons/left-arrow.png" alt="">
+        </a>
       </div>
-    </div>
 
 
     <figure>
@@ -107,10 +108,10 @@
           <p>Copyright &copy; Laura Arellano Torrero </p>
         </div>
         <div class="footer-item2">
-          <img src="assets/icons/spotify-line.png" alt="">
-          <img src="assets/icons/youtube-fill.png" alt="">
-          <img src="assets/icons/icons_instagram.png" alt="">
-          <img src="assets/icons/tiktok-icon.png" alt="">
+          <a href="https://open.spotify.com/user/11135358773?si=lUnKz2DtSAG-p7ZXeB6SpQ"><img src="assets/icons/spotify-line.png" alt=""></a>
+          <a href="https://www.youtube.com/@lauritaare1246"><img src="assets/icons/youtube-fill.png" alt=""></a>
+          <a href="https://github.com/LauraAre"><img src="assets/icons/github.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/laura-arellano-torrero-928678269/"><img src="assets/icons/linkedin.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -123,6 +124,11 @@
     hamburger.addEventListener('click', () => {
       menuItem3.classList.toggle('active');
     });
+
+    function ArrowAtras() {
+      window.history.back();
+    }
+
   </script>
 
 </body>
