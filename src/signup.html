@@ -32,17 +32,15 @@
           </ul>
         </div>
 
-        <div class="icono-lineas">
+        
+
+        <div class="hamburger" id="hamburger">
           <img src="assets/icons/uil_align-justify.png" alt="Menu" width="30">
-          <div class="menu-item3">
-            <button> <a href="signup.html"> Sign up </a> </button>
-            <button> <a href="#"> Log in </a> </button>
-          </div>
         </div>
 
-        <div class="menu-item3">
-          <button> <a href="signup.html"> Sign up </a> </button>
-          <button> <a href="#"> Log in </a> </button>
+        <div class="menu-item3" id="menu-item3">
+          <button><a href="signup.html">Sign up</a></button>
+          <button><a href="#">Log in</a></button>
         </div>
 
 
@@ -117,6 +115,15 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menuItem3 = document.querySelector('.menu-item3');
+
+    hamburger.addEventListener('click', () => {
+      menuItem3.classList.toggle('active');
+    });
+  </script>
 
 </body>
 

@@ -30,37 +30,32 @@ header {
             }
         }
 
-        .icono-lineas {
+        .hamburger {
             display: none;
 
             @include respond-to("small") {
                 display: block;
-                cursor: pointer; // Con esto sale la manita del ratón para que parezca un enlace
-            }
-
-            &:hover {
-                .menu-item3 {
-                    display: flex;
-                    flex-direction: column;
-                }
+                cursor: pointer;
             }
         }
 
-
-
         .menu-item3 {
+            display: flex;
+            gap: 20px;
+
             @include respond-to("small") {
-                display: none;
+                display: none; /* Oculto en pantallas pequeñas */
+                flex-direction: column;
+                gap: 10px;
             }
 
-            button:nth-child(1) {
-                margin-right: 50px;
-
+            &.active {
                 @include respond-to("small") {
-                    margin-right: 0;
-                    margin-bottom: 10px;
+                    display: flex; /* Mostrar cuando el menú esté activo */
                 }
             }
+
+        
 
             button {
                 background-color: $colors-mode-colors-1-primary-color-2;
