@@ -3,7 +3,14 @@
 header {
     background-color: $colors-mode-colors-2-secondary-color-2;
     width: 100%;
-
+.menu-item1{
+    ul{
+        @include respond-to("small") {
+            padding: 0px;
+            margin: 0px;
+        } 
+    }
+}
     .menu-items {
         display: flex;
         justify-content: space-between;
@@ -13,6 +20,13 @@ header {
         height: 160px;
 
         .menu-item2 {
+            ul{
+                @include respond-to("small") {
+                padding: 20px;
+                margin: 0px;
+            }
+        }
+
             a:nth-child(3) {
                 padding: 0;
             }
@@ -28,6 +42,7 @@ header {
                     padding-right: 20px;
                 }
             }
+
         }
 
         .hamburger {
